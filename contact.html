@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="maintenance.html">Maintenance Request</a></li>
+            <li><a href="application.html">Apply Now</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-form">
+        <h2>Let's get in touch! Schedule a tour today!</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Contact Method:</label>
+                <div class="radio-group">
+                    <input type="radio" id="contact-phone" name="contact-method" value="Phone" required>
+                    <label for="contact-phone">Phone</label>
+
+                    <input type="radio" id="contact-email" name="contact-method" value="Email">
+                    <label for="contact-email">Email</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="unit-type">Which unit are you interested in?</label>
+                <select id="unit-type" name="unit-type" required>
+                    <option value="1BR1BA">1BR1BA</option>
+                    <option value="2BR2BA">2BR2BA</option>
+                    <option value="2BR1.5BA">2BR1.5BA</option>
+                    <option value="3BR2BA">3BR2BA</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>

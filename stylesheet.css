@@ -1,0 +1,558 @@
+
+/* Forest Duck Green Color Scheme */
+:root {
+    --forest-green: #154733;
+    --duck-yellow: #FEE123;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --dark-gray: #333333;
+    --overlay-bg: rgba(21, 71, 51, 0.6);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--forest-green);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('riverfront.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: var(--overlay-bg);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-overlay h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 3rem;
+    margin: 0;
+}
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('birdseye.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+.text-box-container {
+    width: 50%;
+    background: rgba(144, 238, 144, 0.5); /* Light green with transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 40px auto; /* Centers it and adds space below the hero */
+}
+
+/* Inner text box */
+.homepage-text-box {
+    background: rgba(255, 255, 255, 0.85); /* White semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Section for text and image */
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Left-aligned text box */
+.text-box-container {
+    width: 50%;
+    background: rgba(144, 238, 144, 0.5); /* Light green with transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner text styling */
+.homepage-text-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Right-aligned image */
+.students-image {
+    width: 40%;
+}
+
+.students-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Announcement Header */
+.announcement {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--forest-green);
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(144, 238, 144, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Underlined "Apply Today" Link */
+.apply-link {
+    color: var(--forest-green);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.apply-link:hover {
+    color: var(--duck-yellow);
+    text-decoration: none;
+}
+
+/* Footer Section */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-section {
+    width: 45%;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--duck-yellow); /* Adds yellow for a nice touch */
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.footer-section a {
+    color: var(--duck-yellow);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+/* Community Message Board */
+.community-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Left-aligned community image */
+.community-image {
+    width: 50%;
+}
+
+.community-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message-board {
+    width: 40%;
+    max-width: 350px;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative; /* Ensures border effect aligns correctly */
+    border: 3px solid var(--duck-yellow); /* Adds the yellow outlined box */
+}
+
+
+.message-board h2 {
+    font-size: 1.5rem;
+    color: var(--forest-green);
+}
+
+.message-board ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.message-board li {
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-board li:last-child {
+    border-bottom: none;
+}
+
+.cta-button {
+    background-color: var(--duck-yellow);
+    color: var(--forest-green);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.parisienne-regular {
+    font-family: 'Parisienne', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Gallery Header */
+.gallery-header {
+    width: fit-content;
+    border: 3px solid var(--duck-yellow); /* Adds yellow outlined box */
+    padding: 10px 20px;
+    margin: 20px 0 20px 5%; /* Aligns to the left */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--forest-green);
+}
+
+/* Carousel Styling */
+.carousel {
+    width: 90%;
+    max-width: 1400px; 
+    height: 80vh; 
+    margin: 20px auto;
+    position: relative;
+    background: rgba(144, 238, 144, 0.5); /* Light green transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure images take up the entire carousel space */
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 10px;
+}
+
+/* Show the first image by default */
+.carousel-images img.active {
+    display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Add hover effect */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 60%;
+    margin: 50px auto;
+    background: rgba(144, 238, 144, 0.5); /* Light green with transparency */
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/*Form Fields */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 10px; 
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Ensures minimal space between button and text */
+    font-size: 16px;
+}
+
+.radio-group input[type="radio"] {
+    margin: 0; /* Removes default margin */
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Maintenance Form Styling */
+.maintenance-form {
+    width: 60%;
+    margin: 50px auto;
+    background: rgba(144, 238, 144, 0.5); /* Light green with transparency */
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.maintenance-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 10px; 
+}
+
+
+.maintenance-form input,
+.maintenance-form select {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.checkbox-group input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.maintenance-form textarea {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+
+.application-form {
+    width: 60%;
+    margin: 50px auto;
+    background: rgba(144, 238, 144, 0.5); /* Light green with transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.application-form h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--forest-green);
+}
+
+.application-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: green;
+    color: white;
+}
+/*Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scroll Fade-In Effect */
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}

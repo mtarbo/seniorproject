@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Request</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="maintenance.html">Maintenance Request</a></li>
+            <li><a href="application.html">Apply Now</a></li>
+        </ul>
+    </nav>
+
+    <section class="maintenance-form">
+        <h2>Uh-oh, tell us what happened!</h2>
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="unit-number">Unit Number:</label>
+                <input type="text" id="unit-number" name="unit-number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time-preference">Preferred Time of Day:</label>
+                <select id="time-preference" name="time-preference" required>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="unit-area">Which part of the unit?</label>
+                <select id="unit-area" name="unit-area" required>
+                    <option value="Kitchen">Kitchen</option>
+                    <option value="Bathroom">Bathroom</option>
+                    <option value="Bedroom">Bedroom</option>
+                    <option value="Misc">Misc</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="specific-issue">Specific Issue:</label>
+                <select id="specific-issue" name="specific-issue" required>
+                    <!-- Default Options -->
+                    <option value="Heating/Cooling">Heating/Cooling</option>
+                    <option value="Sink">Sink</option>
+                    <option value="Garbage Disposal">Garbage Disposal</option>
+                    <option value="Toilet">Toilet</option>
+                    <option value="Lighting">Lighting</option>
+                    <option value="Plumbing">Plumbing</option>
+                    <option value="Appliance">Appliance</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Tell us what happened:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="authorization" name="authorization" required>
+                <label for="authorization">I authorize the maintenance team to enter my unit if I am not home.</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+    </section>
+
+    <script src="maintenance.js"></script>
+
+</body>
+</html>
